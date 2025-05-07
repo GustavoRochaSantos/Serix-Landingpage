@@ -81,14 +81,14 @@ export function Footer() {
                 <img
                   src="/app-store-badge.svg"
                   alt="Baixar na App Store"
-                  className="h-10 w-auto rounded hover:opacity-90 transition-opacity"
+                  className="h-10 min-w-36 object-contain hover:opacity-90 transition-opacity"
                 />
               </a>
               <a href="#" className="inline-block">
                 <img
                   src="/google-play-badge.svg"
                   alt="Baixar no Google Play"
-                  className="h-10 w-auto rounded hover:opacity-90 transition-opacity"
+                  className="h-10 min-w-36 object-contain hover:opacity-90 transition-opacity"
                 />
               </a>
             </div>

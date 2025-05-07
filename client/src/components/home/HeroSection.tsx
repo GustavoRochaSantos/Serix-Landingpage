@@ -39,7 +39,7 @@ export function HeroSection() {
             />
             <div className="absolute -bottom-6 -right-6 bg-primary rounded-full p-4 shadow-lg hidden md:block">
               <div className="text-white text-center">
-                <div className="text-2xl font-bold">EM BREVE</div>
+                <div className="text-xl font-semibold" style={{ fontFamily: "'Roboto', sans-serif" }}>EM BREVE</div>
                 <div className="text-sm opacity-80">Aguarde!</div>
               </div>
             </div>

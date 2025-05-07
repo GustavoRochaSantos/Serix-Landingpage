@@ -26,7 +26,7 @@ export function AppStoreSection() {
                   <img 
                     src="/app-store-badge.svg" 
                     alt="Baixar na App Store" 
-                    className="h-14 w-auto rounded hover:opacity-90 transition-opacity" 
+                    className="h-14 min-w-40 object-contain hover:opacity-90 transition-opacity" 
                   />
                 </a>
               </Link>
@@ -35,7 +35,7 @@ export function AppStoreSection() {
                   <img 
                     src="/google-play-badge.svg" 
                     alt="Baixar no Google Play" 
-                    className="h-14 w-auto rounded hover:opacity-90 transition-opacity" 
+                    className="h-14 min-w-40 object-contain hover:opacity-90 transition-opacity" 
                   />
                 </a>
               </Link>
