@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  
+  /* Serix Colors - Light Mode */
+  --primary: 258 59% 45%; /* #5B2FB6 */
+  --primary-foreground: 210 40% 98%;
+  --secondary: 260 65% 33%; /* #411E8B */
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --tertiary: 167 63% 42%; /* #28AF8B */
+  --tertiary-foreground: 210 40% 98%;
+  
+  --warning: 35 87% 65%; /* #F2AC57 */
+  --warning-foreground: 210 40% 98%;
+  --success: 156 61% 53%; /* #32D99A */
+  --success-foreground: 210 40% 98%;
+  --destructive: 0 100% 72%; /* #FF7171 */
+  --destructive-foreground: 210 40% 98%;
+  
+  --neutral-100: 220 30% 98%;
+  --neutral-200: 220 14% 96%;
+  --neutral-300: 0 0% 45%;
+  --neutral-400: 0 0% 38%;
+  --neutral-900: 0 0% 0%;
+  
+  --ring: var(--primary);
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  
+  /* Serix Colors - Dark Mode */
+  --primary: 258 59% 45%; /* #5B2FB6 */
+  --primary-foreground: 0 0% 98%;
+  --secondary: 260 65% 33%; /* #411E8B */
+  --secondary-foreground: 0 0% 98%;
+  --tertiary: 167 63% 42%; /* #28AF8B */
+  --tertiary-foreground: 0 0% 98%;
+  
+  --warning: 35 87% 65%; /* #F2AC57 */
+  --warning-foreground: 0 0% 98%;
+  --success: 156 61% 53%; /* #32D99A */
+  --success-foreground: 0 0% 98%;
+  --destructive: 0 100% 72%; /* #FF7171 */
+  --destructive-foreground: 0 0% 98%;
+  
+  --neutral-100: 0 0% 7%;
+  --neutral-200: 240 3.7% 15.9%;
+  --neutral-300: 0 0% 45%;
+  --neutral-400: 0 0% 55%;
+  --neutral-900: 0 0% 98%;
+  
+  --ring: var(--primary);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .gradient-primary {
+    @apply bg-gradient-to-r from-primary to-secondary;
+  }
+  
+  .container-custom {
+    @apply container mx-auto px-4 md:px-8;
+  }
+}
